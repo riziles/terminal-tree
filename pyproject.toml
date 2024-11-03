@@ -4,10 +4,16 @@ version = "0.1.5"
 description = "Experimental file navigator for the terminal"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = [    
+dependencies = [
     "textual>=0.85.2",
-    "rich>=13.9.4"
+    "rich>=13.9.4",
+    "textual-serve>=1.1.1",
 ]
 
 [project.scripts]
 terminal-tree = "tree:run"
+
+[dependency-groups]
+dev = [
+    "textual-dev>=1.6.1",
+]
